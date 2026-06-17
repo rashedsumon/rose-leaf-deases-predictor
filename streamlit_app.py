@@ -52,7 +52,7 @@ if uploaded_file is not None:
                 
                 # Highlight outcome based on health status
                 if "healthy" in label.lower():
-                    st.success(f"**Result:** {label} ")
+                    st.success(f"**Result:** {label} (Confidence: {confidence:.2f}%)")
                     st.balloons()
                 else:
                     st.error(f"**Condition Detected:** {label} (Confidence: {confidence:.2f}%)")
