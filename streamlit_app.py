@@ -52,10 +52,10 @@ if uploaded_file is not None:
                 
                 # Highlight outcome based on health status
                 if "healthy" in label.lower():
-                    st.success(f"**Result:** {label} (Confidence: {confidence:.2f}%)")
+                    st.success(f"**Result:** {label} ")
                     st.balloons()
                 else:
-                    st.error(f"**Condition Detected:** {label} (Confidence: {confidence:.2f}%)")
+                    st.error(f"**Condition Detected:** {label} ")
                     st.warning("⚠️ Recommendation: Isolate plant leaf stems and treat using recommended biological agents.")
             except Exception as e:
                 st.exception(f"Error handling image parsing pipeline: {e}")
