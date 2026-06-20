@@ -7,7 +7,7 @@ from model import get_model, predict_image
 # App configurations
 st.set_page_config(page_title="Rose Leaf Disease Analyzer", page_icon="🌹", layout="centered")
 
-st.title("🌹 Rose Leaf Disease Classifier")
+st.title("🌹 Rose Leaf Disease Prediction")
 st.write("Upload a clear photo of a rose leaf to analyze its health status using AI.")
 
 # --- STEP 1: Manage Dataset and Class Resolution ---
